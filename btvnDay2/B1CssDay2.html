@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+    <style>
+        *{
+            text-align: center;
+        }
+        table, th, td {
+          border: 1px solid black;
+        }
+        .header{
+            background-color: chartreuse;
+            height: 150px;
+        }
+        .left{
+            background-color: cornflowerblue;
+            height: 400px;
+        }
+        .content{
+            background-color: darkcyan;
+            width: 900px;
+        }
+        .right{
+            background-color: cornflowerblue;
+        }
+        .footer{
+            background-color: red;
+            height: 150px;       
+        } 
+    </style>
+</head>
+<body>
+    <table style="width: 100%;" >
+		<tr class="header" >
+			<td colspan="3" class="header"><p>Header</p></td>
+		</tr>
+		<tr > 
+			<td class="left"><p>Left</p></td>
+			<td class="content"><p>Center</p></td>
+			<td class="right"><p>Right</p></td>
+		</tr>
+		<tr>
+			<td colspan="3" class="footer"><p>Footer</p></td>
+		</tr>
+	</table>
+</body>
+</html>
