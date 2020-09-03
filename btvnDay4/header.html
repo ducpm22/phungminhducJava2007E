@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  
+</head>
+<style>
+    .header {
+            background-color: coral;
+            text-align: center;
+            width: 1200px;
+            height: 200px;
+            margin: 0 0 0 150px;
+        }
+
+        .header .left img {
+            float: left;
+            height: 200px;
+            width: 300px;
+        }
+
+        .header .right img {
+            height: 200px;
+            width: 900px;
+        }
+
+
+        /*Dropdown*/
+        ul {
+            list-style-type: none;
+            margin: 0;
+            overflow: hidden;
+            background-color: #286090;
+        }
+
+        li {
+            float: left;
+            display: list-item;
+            text-align: -webkit-match-parent;
+
+        }
+
+        li a,
+        .dropbtn {
+            display: inline-block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        .menu-header a:hover,
+        .dropdown:hover .dropbtn {
+            background-color: rgb(89, 92, 79);
+        }
+
+        li.dropdown {
+            display: inline-block;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+            z-index: 1;
+        }
+
+        .dropdown-content a {
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+            text-align: left;
+        }
+
+        .dropdown-content a:hover {
+            background-color: #a15858;
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+
+        .menu-header .search-container {
+            float: right;
+        }
+
+        .menu-header input[type=text] {
+            padding: 6px;
+            margin-top: 8px;
+            font-size: 17px;
+            border: none;
+        }
+
+        .menu-header .search-container button {
+            float: right;
+            padding: 6px 10px;
+            margin-top: 8px;
+            margin-right: 16px;
+            background: #ddd;
+            font-size: 17px;
+            border: none;
+            cursor: pointer;
+        }
+
+        .menu-header .search-container button:hover {
+            background: #ccc;
+        }
+
+        @media screen and (max-width: 600px) {
+            .menu-header .search-container {
+                float: none;
+            }
+
+            .menu-header input[type=text],
+            .menu-header .search-container button {
+                float: none;
+                display: block;
+                text-align: left;
+                width: 100%;
+                margin: 0;
+                padding: 14px;
+            }
+
+            .menu-header input[type=text] {
+                border: 1px solid #ccc;
+            }
+        }
+</style>
+<body>
+    <div class="header">
+        <div class="left"> <a href="#">
+                <img src="https://png.pngtree.com/png-clipart/20190603/original/pngtree-beautifully-decorated-football-poster-png-image_523175.jpg"
+                    alt="#"></a></div>
+        <div class="right">
+            <a href=""><img
+                    src="https://brand.assets.adidas.com/image/upload/f_auto,q_auto,fl_lossy/viVN/Images/football-fw19-hp-euro-multifeds-launch-mastheadS-2-desktop_tcm337-374109.jpg" /></a>
+        </div>
+
+    </div>
+    <div class="menu-header">
+        <ul>
+            <li><a href="EsportNews.html">Home</a></li>
+            <li><a href="#news">News</a></li>
+            <li class="dropdown">
+                <a href="javascript:void(0)" class="dropbtn">Drammar</a>
+                <div class="dropdown-content">
+                    <a href="#">Link 1</a>
+                    <a href="#">Link 2</a>
+                    <a href="#">Link 3</a>
+                </div>
+            </li>
+            <li><a href="#news">Hot</a></li>
+            <li><a href="#news">Drammar</a></li>
+            <li class="dropdown">
+                <a href="javascript:void(0)" class="dropbtn">Ngoại Hạng Anh</a>
+                <div class="dropdown-content">
+                    <a href="#">Link 1</a>
+                    <a href="#">Link 2</a>
+                    <a href="#">Link 3</a>
+                </div>
+            </li>
+            <li><a href="#news">Thời Trang</a></li>
+            <li><a href="#news">Pháp Luật</a></li>
+            <li><a href="#news">Công Nghệ</a></li>
+            <li><a href="#news">Du Lịch</a></li>
+            <div class="search-container">
+                <form action="/action_page.php">
+                    <input type="text" placeholder="Search.." name="search">
+                    <button type="submit"><i class="fa fa-search"></i></button>
+                </form>
+            </div>
+        </ul>
+
+    </div>
+</body>
+</html>
