@@ -17,6 +17,7 @@
 
         .wrapper {
             font-family: Arial;
+           
         }
 
         /*slideshow*/
@@ -52,50 +53,54 @@
 
             float: left;
             margin: 0 5px 0 0;
-            
+
 
         }
-        .b{
+
+        .b {
             border-bottom: 2px solid #78b43d;
         }
-        .detail .list-nb .row .colum1 img {
-        margin-right: 10px;
-        height: 150px;
-        width: 265px;
-        border: cadetblue;
-        margin-top: 10px;
-        }
-    .detail .leftaa .noibat .list-nb .row .colum1 img {
-        margin-right: 10px;
-        height: 150px;
-        width: 265px;
-        border: cadetblue;
 
-    
-    }
-    /* .trendAdl-header{
-        position: relative;
-    }
-    .trendAdl-header:before {
-    display: block;
-    width: 4px;
-    height: 20px;
-    position: absolute;
-    top: 9px;
-    left: 0;
-    background-color: #ff5e34;
-    content: ''; */
-/* } */
-   
+        .detail .list-nb .row .colum1 img {
+            margin-right: 10px;
+            height: 150px;
+            width: 265px;
+            border: cadetblue;
+            margin-top: 10px;
+        }
+        .detail{
+            margin: 0 0 0 150px;
+        }
+        .detail .leftaa .noibat .list-nb .row .colum1 img {
+            margin-right: 10px;
+            height: 150px;
+            width: 265px;
+            border: cadetblue;
+
+
+        }
+
+        .content-new {
+            border-bottom: 1px solid #ededed;
+
+        }
+
+        .content-new .cnl {
+            float: left;
+            margin: 5px 10px 20px 0;
+        }
+
+        .content-new .cnr a {
+            text-decoration: none;
+
+        }
     </style>
 </head>
 
 
 <body>
     <div class="wrapper">
-        <div id="header">
-
-        </div>
+        <div id="header"></div>
 
         <div class="slideshow">
 
@@ -112,7 +117,7 @@
                 <div class="noibat">
                     <H2>Bài Viết Nổi Bật</H2>
                     <div>
-                        <a href="#"><img
+                        <a href="trang2.html"><img
                                 src="https://cdn.24h.com.vn/upload/3-2020/images/2020-08-27/Messi-va-Barcelona-de-dua-nhau-ra-toa-Luat-su-nhan-dinh-ben-nao-thang-the-3-660-1598492404-669-width660height371.jpg"
                                 width="857px" height="400px"></a>
 
@@ -120,10 +125,10 @@
                                 biệt</a></h2>
                         <div class="b">
                             <span>
-                                <h6>Ngày đăng: 30-09-2019  Lượt xem: 2344 lượt</h6>
-                                
+                                <h6>Ngày đăng: 30-09-2019 Lượt xem: 2344 lượt</h6>
+
                             </span>
-                            
+
                             <p>Messi đang tranh cãi cực gắt với Barcelona về điều khoản đặc biệt để được ra đi và chưa
                                 bên nào có ý định nhượng bộ..</p>
 
@@ -171,9 +176,11 @@
                 </div>
 
                 <div class="post-news">
-                    <div class="trendAdl-header"><h2>BÀI VIẾT MỚI NHẤT</h2></div>
+                    <div class="trendAdl-header">
+                        <h2>BÀI VIẾT MỚI NHẤT</h2>
+                    </div>
                     <div class="content-news">
-                        <div class="news-detail">
+                        <!-- <div class="news-detail">
                             <a><img
                                     src="https://cdn.24h.com.vn/upload/3-2020/images/2020-08-22/medium/2-640-1598089879-919-width640height480.jpg" /></a>
                             <div class="info-post">
@@ -253,7 +260,7 @@
                             </div>
                             <p>Leeds United mới đây đã biến HLV Marcelo Bielsa trở thành chiến lược gia nhận lương cao
                                 thứ 6 ở Ngoại hạng Anh.</p>
-                        </div>
+                        </div> -->
 
 
 
@@ -262,14 +269,14 @@
 
 
                     <div class="quatrang" style="text-align: center;">
-                        <span>1</sapan>
-                            <a href="#">2</a>
-                            <a href="#">3</a>
-                            <a href="#">...</a>
-                            <a href="#">4</a>
-                            <a href="#">5</a>
-                            <a href="#">6</a>
-                            <a href="#">Tiếp theo</a>
+                        <a href="#">1</a>
+                        <a href="#">2</a>
+                        <a href="#">3</a>
+                        <a href="#">...</a>
+                        <a href="#">4</a>
+                        <a href="#">5</a>
+                        <a href="#">6</a>
+                        <a href="#">Tiếp theo</a>
                     </div>
                 </div>
             </div>
@@ -290,6 +297,7 @@
     </div>
 
 </body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <script>
 
     $(document).ready(function () {
@@ -312,6 +320,76 @@
             setTimeout(carousel, 3000);
         }
     });
+
+    var numberOfPage = 5;
+    var data = [
+        { anh: "https://cdn.24h.com.vn/upload/3-2020/images/2020-08-22/medium/2-640-1598089879-919-width640height480.jpg", info: "Quang Hải, Công Phượng, Văn Hậu bất ngờ tăng giá: Ai đắt nhất ĐT Việt Nam?", date: "Ngày đăng: 30-09-2019", noidung: "Sau những thành công liên tiếp tại đấu trường châu lục của đội tuyển quốc gia, các cầu thủ Việt Nam đã được giới mộ điệu chú ý hơn. Bằng chứng là chuyên trang chuyển nhượng Transfermarkt đã thường xuyên cập nhật định giá của các cầu thủ Việt Nam so với trước kia (3 lần trong 4 tháng gần nhất).." },
+        { anh: "https://cdn.24h.com.vn/upload/3-2020/images/2020-08-22/medium/2-640-1598089879-919-width640height480.jpg", info: "Quang Hải, Công Phượng, Văn Hậu bất ngờ tăng giá: Ai đắt nhất ĐT Việt Nam?", date: "Ngày đăng: 30-09-2019", noidung: "Sau khi thắng ngược MU 2-1 đầy ấn tượng ở bán kết Europa League, Sevilla tiến vào trận chung kết với hy vọng sẽ lập kỷ lục mới với lần thứ 6 đăng quang.Dẫu vậy, đối thủ của đội bóng xứ Andalusia là Inter Milan, những người cũng vừa gây dấu" },
+        { anh: "https://cdn.24h.com.vn/upload/3-2020/images/2020-08-22/medium/1598044651-722-thumbnail-width640height480.jpg", info: "Quang Hải, Công Phượng, Văn Hậu bất ngờ tăng giá: Ai đắt nhất ĐT Việt Nam?", date: "Ngày đăng: 30-09-2019", noidung: "Tình cảnh thâm hụt doanh thu vì không thể cho khán giả vào sân đang khiến các đội bóng Ngoại hạng Anh lao đao. Và nó là căn nguyên của nhiều vấn đề phát sinh trước thềm mùa giải 2020/21." },
+        { anh: "https://cdn.24h.com.vn/upload/3-2020/images/2020-08-21/medium/mohamed-salah-roberto-firmino-andrew-robertson-premier-league_1cc7k2z7hu1lq1uxaunfspipmk-40-1597974569-319-width640height480.jpg", info: "Quang Hải, Công Phượng, Văn Hậu bất ngờ tăng giá: Ai đắt nhất ĐT Việt Nam?", date: "Ngày đăng: 30-09-2019", noidung: "Những ông lớn châu Âu như Barcelona hay Man City đang rất tích cực trên thị trường chuyển nhượng nhằm lấy lại vị thế đã đánh mất ở mùa giải vừa qua. Chi tiết sẽ có trong Clip 1 phút Bóng đá 24H ngày 21/8.." },
+        { anh: "https://cdn.24h.com.vn/upload/3-2020/images/2020-08-21/medium/clip-ava-1598007244-265-width640height480.jpg", info: "Quang Hải, Công Phượng, Văn Hậu bất ngờ tăng giá: Ai đắt nhất ĐT Việt Nam?", date: "Ngày đăng: 30-09-2019", noidung: "Leeds United mới đây đã biến HLV Marcelo Bielsa trở thành chiến lược gia nhận lương cao thứ 6 ở Ngoại hạng Anh." },
+        { anh: "https://cdn.24h.com.vn/upload/3-2020/images/2020-08-22/medium/1598044651-722-thumbnail-width640height480.jpg", info: "Quang Hải, Công Phượng, Văn Hậu bất ngờ tăng giá: Ai đắt nhất ĐT Việt Nam?", date: "Ngày đăng: 30-09-2019", noidung: "Tình cảnh thâm hụt doanh thu vì không thể cho khán giả vào sân đang khiến các đội bóng Ngoại hạng Anh lao đao. Và nó là căn nguyên của nhiều vấn đề phát sinh trước thềm mùa giải 2020/21." },
+        { anh: "https://cdn.24h.com.vn/upload/3-2020/images/2020-08-22/medium/1598044651-722-thumbnail-width640height480.jpg", info: "Quang Hải, Công Phượng, Văn Hậu bất ngờ tăng giá: Ai đắt nhất ĐT Việt Nam?", date: "Ngày đăng: 30-09-2019", noidung: "Tình cảnh thâm hụt doanh thu vì không thể cho khán giả vào sân đang khiến các đội bóng Ngoại hạng Anh lao đao. Và nó là căn nguyên của nhiều vấn đề phát sinh trước thềm mùa giải 2020/21." },
+        { anh: "https://cdn.24h.com.vn/upload/3-2020/images/2020-08-22/medium/1598044651-722-thumbnail-width640height480.jpg", info: "Quang Hải, Công Phượng, Văn Hậu bất ngờ tăng giá: Ai đắt nhất ĐT Việt Nam?", date: "Ngày đăng: 30-09-2019", noidung: "Tình cảnh thâm hụt doanh thu vì không thể cho khán giả vào sân đang khiến các đội bóng Ngoại hạng Anh lao đao. Và nó là căn nguyên của nhiều vấn đề phát sinh trước thềm mùa giải 2020/21." },
+        { anh: "https://cdn.24h.com.vn/upload/3-2020/images/2020-08-22/medium/1598044651-722-thumbnail-width640height480.jpg", info: "Quang Hải, Công Phượng, Văn Hậu bất ngờ tăng giá: Ai đắt nhất ĐT Việt Nam?", date: "Ngày đăng: 30-09-2019", noidung: "Tình cảnh thâm hụt doanh thu vì không thể cho khán giả vào sân đang khiến các đội bóng Ngoại hạng Anh lao đao. Và nó là căn nguyên của nhiều vấn đề phát sinh trước thềm mùa giải 2020/21." },
+        { anh: "https://cdn.24h.com.vn/upload/3-2020/images/2020-08-22/medium/1598044651-722-thumbnail-width640height480.jpg", info: "Quang Hải, Công Phượng, Văn Hậu bất ngờ tăng giá: Ai đắt nhất ĐT Việt Nam?", date: "Ngày đăng: 30-09-2019", noidung: "Tình cảnh thâm hụt doanh thu vì không thể cho khán giả vào sân đang khiến các đội bóng Ngoại hạng Anh lao đao. Và nó là căn nguyên của nhiều vấn đề phát sinh trước thềm mùa giải 2020/21." },
+        { anh: "https://cdn.24h.com.vn/upload/3-2020/images/2020-08-22/medium/1598044651-722-thumbnail-width640height480.jpg", info: "Quang Hải, Công Phượng, Văn Hậu bất ngờ tăng giá: Ai đắt nhất ĐT Việt Nam?", date: "Ngày đăng: 30-09-2019", noidung: "Tình cảnh thâm hụt doanh thu vì không thể cho khán giả vào sân đang khiến các đội bóng Ngoại hạng Anh lao đao. Và nó là căn nguyên của nhiều vấn đề phát sinh trước thềm mùa giải 2020/21." },
+
+    ];
+    pagination(data);
+
+    function pagination(inputData) {
+        var length = data.length;
+
+        if (length > numberOfPage) {
+            for (var i = 0; i < numberOfPage; i++) {
+                putData(inputData[i]);
+            }
+            drawPagination(inputData);
+        } else {
+            data.forEach(item => {
+                putData(item);
+            });
+        }
+    };
+
+    function drawPagination(inputData) {
+        var length = inputData.length;
+        var surplus = length % numberOfPage;
+        var totalPage = 0;
+        if (surplus > 0) {
+            totalPage = (length / numberOfPage) + 1;
+        } else {
+            totalPage = length / numberOfPage;
+        }
+
+        for (var i = 1; i <= totalPage; i++) {
+            $(".quatrang").append("<span><a href='#'>" + i + "</a></span>");
+        }
+
+        $(".quatrang a").click(function () {
+            $(".content-news").empty();
+            var index = +$(this).text();
+            var maxRecord = numberOfPage * index;
+            for (var i = (maxRecord - numberOfPage); i < maxRecord; i++) {
+                if (inputData[i] != undefined) {
+                    putData(inputData[i]);
+                }
+            }
+        });
+    }
+
+    function putData(inputData) {
+        $(".content-news").append(
+            "<div class='news-detail'>" +
+            "<a>" + '<img src="' + inputData.anh + '"/>' + "</a>" +
+            "<div class='info-post'>" + "<h4>" + inputData.info + "</h4>" + "</div>" +
+            "<div>" + "<span>" + inputData.date + "</span>" + "</div>" +
+            "<p>" + inputData.noidung + "</p>" +
+            "</div>"
+
+        );
+    }
 </script>
 
 </html>

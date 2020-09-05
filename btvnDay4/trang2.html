@@ -9,6 +9,9 @@
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </head>
 <style>
     /*main*/
@@ -16,7 +19,6 @@
         height: 2400px;
         width: 1200px;
         margin: 0 auto;
-        margin: 0 0 0 150px;
     }
 
     .detail a {
@@ -54,12 +56,22 @@
         margin: 2px 36px 2px 0px;
     }
 
-    .detail .list-nb .row .colum1 img {
+    .detail .carousel-item .row .colum1 img {
         margin-right: 10px;
         height: 150px;
         width: 265px;
         border: cadetblue;
         margin-top: 10px;
+
+
+    }
+
+    .detail .leftaa .noibat .list-nb .row .colum1 img {
+        margin-right: 10px;
+        height: 150px;
+        width: 265px;
+        border: cadetblue;
+
 
     }
 </style>
@@ -127,42 +139,103 @@
                 Tin liên quan
 
             </div>
-            <div class="list-nb" style="padding: 0 0 10px;">
-                <!-- <div class="row">
-                    <div class="colum1">
-                        <a href="#"><img
-                                src="https://cdn.24h.com.vn/upload/3-2020/images/2020-08-22/medium/118207510_2634149263464328_2865976630220557387_n-640-1598081380-779-width640height480.jpg" /></a>
-                        <h4><a href="trang1.html">Cầu thủ U22 Việt Nam chảy máu cam ở buổi tập trưa, có người “thở không
-                                ra hơi”</a></h4>
+            <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="row" style="margin-right: -15px;
+                        margin-left: 9px;">
+                            <div class="colum1">
+                                <a href="#"><img
+                                        src="https://cdn.24h.com.vn/upload/3-2020/images/2020-08-22/medium/118207510_2634149263464328_2865976630220557387_n-640-1598081380-779-width640height480.jpg" /></a>
+                                <h4><a href="trang1.html">Cầu thủ U22 Việt Nam chảy máu cam ở buổi tập trưa, có người
+                                        “thở không
+                                        ra hơi”</a></h4>
 
+                            </div>
+                            <div class="colum1">
+                                <a href="#"><img
+                                        src="https://cdn.24h.com.vn/upload/3-2020/images/2020-08-22/medium/higuainronaldo-juventus-2019_5fe13aes3wx21c793efn1k16d-640-1598066988-344-width640height480.jpg" /></a>
+                                <h4><a href="#">Juventus gạt bỏ Higuain, tướng mới Pirlo chiều Ronaldo "hết cỡ", như con
+                                        cưng</a></h4>
+
+                            </div>
+                            <div class="colum1">
+                                <a href="#"><img 
+                                        src="http://bongdaso.com/images/Article/Upload/200905_005502_150.jpg" />
+                                    <h4><a href="#">"Quái thú" Serie A đặt một chân tới Man City: MU, Liverpool tiếc đứt
+                                            ruột</a></h4>
+
+                            </div>
+                        </div>
+                        <!-- <trang 2></trang> -->
                     </div>
-                    <div class="colum1">
-                        <a href="#"><img
-                                src="https://cdn.24h.com.vn/upload/3-2020/images/2020-08-22/medium/higuainronaldo-juventus-2019_5fe13aes3wx21c793efn1k16d-640-1598066988-344-width640height480.jpg" /></a>
-                        <h4><a href="#">Juventus gạt bỏ Higuain, tướng mới Pirlo chiều Ronaldo "hết cỡ", như con
-                                cưng</a></h4>
+                    <div class="carousel-item">
+                        <div class="row" style="margin-right: -15px;
+                        margin-left: 9px;">
+                            <div class="colum1" style="padding: 0 0 0 10px;">
+                                <a href="#"><img 
+                                        src="http://bongdaso.com/images/Article/Upload/200822_045620_810.jpg" /></a>
+                                <h4><a href="trang1.html">Cầu thủ U22 Việt Nam chảy máu cam ở buổi tập trưa, có người
+                                        “thở không
+                                        ra hơi”</a></h4>
 
+                            </div>
+                            <div class="colum1">
+                                <a href="#"><img 
+                                        src="http://bongdaso.com/images/Article/Upload/200822_045914_541.jpg" /></a>
+                                <h4><a href="#">Juventus gạt bỏ Higuain, tướng mới Pirlo chiều Ronaldo "hết cỡ", như con
+                                        cưng</a></h4>
+
+                            </div>
+                            <div class="colum1">
+                                <a href="#"><img 
+                                        src="http://bongdaso.com/images/Article/Upload/200822_045430_765.jpg" />
+                                    <h4><a href="#">"Quái thú" Serie A đặt một chân tới Man City: MU, Liverpool tiếc đứt
+                                            ruột</a></h4>
+
+                            </div>
+                        </div>
+                        <!-- <trang 3></trang> -->
                     </div>
-                    <div class="colum1">
-                        <a href="#"><img
-                                src="https://cdn.24h.com.vn/upload/3-2020/images/2020-08-22//mc-2-ava-1598088297-361-width640height480.jpg" />
-                            <h4><a href="#">"Quái thú" Serie A đặt một chân tới Man City: MU, Liverpool tiếc đứt
-                                    ruột</a></h4>
+                    <div class="carousel-item">
+                        <div class="row" style="margin-right: -15px;
+                        margin-left: 9px;">
+                            <div class="colum1" style="padding: 0 0 0 10px;">
+                                <a href="#"><img 
+                                        src="http://bongdaso.com/images/Article/Upload/200819_050329_449.jpg" /></a>
+                                <h4><a href="trang1.html">Cầu thủ U22 Việt Nam chảy máu cam ở buổi tập trưa, có người
+                                        “thở không
+                                        ra hơi”</a></h4>
 
+                            </div>
+                            <div class="colum1">
+                                <a href="#"><img 
+                                        src="http://bongdaso.com/images/Article/Upload/200819_033803_500.jpg" /></a>
+                                <h4><a href="#">Juventus gạt bỏ Higuain, tướng mới Pirlo chiều Ronaldo "hết cỡ", như con
+                                        cưng</a></h4>
+
+                            </div>
+                            <div class="colum1">
+                                <a href="#"><img 
+                                        src="http://bongdaso.com/images/Article/Upload/200819_050129_351.jpg" />
+                                    <h4><a href="#">"Quái thú" Serie A đặt một chân tới Man City: MU, Liverpool tiếc đứt
+                                            ruột</a></h4>
+
+                            </div>
+                        </div>
+                        <!-- <img class="d-block w-100" src="..." alt="Third slide"> -->
                     </div>
-                </div> -->
-
+                </div>
+                <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
             </div>
-            <div class="quatrang" style="text-align: center;">
-                <span href="#">1</span>
-                <span href="#">2</span>
-                <span href="#">3</span>
-                <a href="#">...</a>
-                <span href="#">4</span>
-                <a href="#">5</a>
-                <a href="#">6</a>
-                <a href="#">Tiếp theo</a>
-            </div>
+
         </div>
 
         <div id="right-body">
@@ -184,75 +257,6 @@
 
 
         });
-        var numberOfPage = 3;
-    var data = [
-        { anh: "https://cdn.24h.com.vn/upload/3-2020/images/2020-08-22/medium/2-640-1598089879-919-width640height480.jpg", info: "Quang Hải, Công Phượng, Văn Hậu bất ngờ tăng giá: Ai đắt nhất ĐT Việt Nam?" },
-        { anh: "https://cdn.24h.com.vn/upload/3-2020/images/2020-08-22/medium/2-640-1598089879-919-width640height480.jpg", info: "Quang Hải, Công Phượng, Văn Hậu bất ngờ tăng giá: Ai đắt nhất ĐT Việt Nam?" },
-        { anh: "https://cdn.24h.com.vn/upload/3-2020/images/2020-08-22/medium/1598044651-722-thumbnail-width640height480.jpg", info: "Quang Hải, Công Phượng, Văn Hậu bất ngờ tăng giá: Ai đắt nhất ĐT Việt Nam?" },
-        { anh: "https://cdn.24h.com.vn/upload/3-2020/images/2020-08-21/medium/mohamed-salah-roberto-firmino-andrew-robertson-premier-league_1cc7k2z7hu1lq1uxaunfspipmk-40-1597974569-319-width640height480.jpg",info: "Quang Hải, Công Phượng, Văn Hậu bất ngờ tăng giá: Ai đắt nhất ĐT Việt Nam?" },
-        { anh: "https://cdn.24h.com.vn/upload/3-2020/images/2020-08-21/medium/clip-ava-1598007244-265-width640height480.jpg", info: "Quang Hải, Công Phượng, Văn Hậu bất ngờ tăng giá: Ai đắt nhất ĐT Việt Nam?"},
-        { anh: "https://cdn.24h.com.vn/upload/3-2020/images/2020-08-22/medium/1598044651-722-thumbnail-width640height480.jpg", info: "Quang Hải, Công Phượng, Văn Hậu bất ngờ tăng giá: Ai đắt nhất ĐT Việt Nam?" },
-        { anh: "https://cdn.24h.com.vn/upload/3-2020/images/2020-08-22/medium/1598044651-722-thumbnail-width640height480.jpg", info: "Quang Hải, Công Phượng, Văn Hậu bất ngờ tăng giá: Ai đắt nhất ĐT Việt Nam?"},
-        { anh: "https://cdn.24h.com.vn/upload/3-2020/images/2020-08-22/medium/1598044651-722-thumbnail-width640height480.jpg", info: "Quang Hải, Công Phượng, Văn Hậu bất ngờ tăng giá: Ai đắt nhất ĐT Việt Nam?"},
-        { anh: "https://cdn.24h.com.vn/upload/3-2020/images/2020-08-22/medium/1598044651-722-thumbnail-width640height480.jpg", info: "Quang Hải, Công Phượng, Văn Hậu bất ngờ tăng giá: Ai đắt nhất ĐT Việt Nam?"},
-        { anh: "https://cdn.24h.com.vn/upload/3-2020/images/2020-08-22/medium/1598044651-722-thumbnail-width640height480.jpg", info: "Quang Hải, Công Phượng, Văn Hậu bất ngờ tăng giá: Ai đắt nhất ĐT Việt Nam?" },
-        { anh: "https://cdn.24h.com.vn/upload/3-2020/images/2020-08-22/medium/1598044651-722-thumbnail-width640height480.jpg", info: "Quang Hải, Công Phượng, Văn Hậu bất ngờ tăng giá: Ai đắt nhất ĐT Việt Nam?" },
-
-    ];
-    pagination(data);
-
-    function pagination(inputData) {
-        var length = data.length;
-
-        if (length > numberOfPage) {
-            for (var i = 0; i < numberOfPage; i++) {
-                putData(inputData[i]);
-            }
-            drawPagination(inputData);
-        } else {
-            data.forEach(item => {
-                putData(item);
-            });
-        }
-    };
-
-    function drawPagination(inputData) {
-        var length = inputData.length;
-        var surplus = length % numberOfPage;
-        var totalPage = 0;
-        if (surplus > 0) {
-            totalPage = (length / numberOfPage) + 1;
-        } else {
-            totalPage = length / numberOfPage;
-        }
-
-        for (var i = 1; i <= totalPage; i++) {
-            $(".quatrang").append("<span><a href='#'>" + i + "</a></span>");
-        }
-
-        $("span").click(function () {
-            $(".list-nb").empty();
-            var index = +$(this).text();
-            var maxRecord = numberOfPage * index;
-            for (var i = (maxRecord - numberOfPage); i < maxRecord; i++) {
-                if (inputData[i] != undefined) {
-                    putData(inputData[i]);
-                }
-            }
-        });
-    }
-
-    function putData(inputData) {
-        $(".list-nb").append(
-            "<div class='row'>" +
-            "<div class='colum1'>"+
-            "<a>" + '<img src="' + inputData.anh + '"/>' + "</a>" +
-            "<h4>" + inputData.info + "</h4>" +
-            "</div>"+
-            "</div>"
-
-        );
-    }
     </script>
 </body>
 
